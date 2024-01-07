@@ -1,0 +1,102 @@
+.bg-Home {
+    background: url("/background.avif") no-repeat center  ;
+    min-height: 100vh;
+}
+.navbar{
+    color: #fff;
+    padding-top: 25px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    margin: 0 20px;
+    position: relative;
+    color: #fff;
+}
+.navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    background-color: #fff;
+    height: 2px;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+.navbar span {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 8px ;
+    margin-left: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.navbar span:hover {
+    background-color: #fff;
+    color: #000;
+}
+.home-content  {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+.home-content h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.home-content p {
+    color: #ccc;
+}
+.shadow{
+    background-color: #00000093;
+    padding: 10px 15px ;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    background: transparent;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
+.hover{
+    cursor: pointer;
+    transition: 0.6s all;
+}
+.hover:hover {
+    background: rgb(204 204 204 / 40%);
+}
